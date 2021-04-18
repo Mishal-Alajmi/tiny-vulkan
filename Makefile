@@ -1,3 +1,4 @@
+# Create a env file in the working directory and make a variable that holds the path to VulkanSDK
 include .env
 
 CFLAGS = -std=c++17 -I. -I$(VULKAN_SDK_PATH)/Include
