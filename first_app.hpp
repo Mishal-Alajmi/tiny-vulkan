@@ -1,6 +1,7 @@
 #pragma once
 
 #include "tve_window.hpp"
+#include "tve_pipeline.hpp"
 
 namespace tve
 {
@@ -14,5 +15,6 @@ namespace tve
 
     private:
         TveWindow TveWindow{WIDTH, HEIGHT, "Hello Vulkan!"};
+        TvePipeline TvePipeline{"shaders/simple_shader.vert.spv", "shaders/simple_shader.frag.spv"};
     };
 } // namespace tve

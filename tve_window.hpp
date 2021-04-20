@@ -12,8 +12,10 @@ namespace tve
     public:
         TveWindow(int width, int height, std::string window_name);
         ~TveWindow();
+        // Remove the copy constructor and copy operator from the window class to avoid big problems
         TveWindow(const TveWindow &) = delete;
         TveWindow &operator=(const TveWindow &) = delete;
+
         bool shouldClose() { return glfwWindowShouldClose(window); }
 
     private:
